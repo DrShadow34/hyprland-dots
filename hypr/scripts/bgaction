@@ -1,0 +1,14 @@
+#!/usr/bin/bash
+
+#start swwww
+swww query || swww init || swww img Pictures/anato-finnstark-web-petit_upscayl_4x_realesrgan-x4plus-anime.png
+
+#figure out which waybar theme is set
+THEMEIS=$(readlink -f ~/.config/waybar/style.css | cut -d '-' -f2)
+
+#show the correct wallpapper based on the theme
+if [ $THEMEIS == "dark.css" ]; then
+    swww img Pictures/anato-finnstark-web-petit_upscayl_4x_realesrgan-x4plus-anime.png
+else
+    swww img Pictures/anato-finnstark-web-petit_upscayl_4x_realesrgan-x4plus-anime.png
+fi
