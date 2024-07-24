@@ -1,0 +1,19 @@
+window > box {
+    background: none;
+}
+
+#workspaces {
+    background-color: none;
+}
+
+#workspaces button {
+    color: {foreground};
+}
+
+#custom-pacman {
+    color: {foreground};
+}
+
+#clock, #custom-sep, #pulseaudio, #temperature, #network, #battery, #custom-pacman, #custom-pacman.pending-updates {
+    color: {foreground};
+}}                      
