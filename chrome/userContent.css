@@ -1,0 +1,201 @@
+/* body {background-color: transparent !important;}
+
+
+*{background-color: rgba(0, 0, 0, 0.3) !important;}
+input:autofill {
+  background: transparent !important; 
+}
+*/
+
+/* imports */
+
+
+
+@-moz-document domain(music.youtube.com) {
+    #background, #chips-wrapper, ytd-mini-guide-entry-renderer {
+        background-color: rgba(0,0,0,.3) !important;
+        backdrop-filter: blur(20px);
+        }    
+    body, html, ytd-app, ytd-mini-guide-renderer {
+        --ytmusic-color-black4: rgba(0,0,0,.3) !important;
+        background-color: transparent !important;
+        --ytmusic-background: transparent !important;
+        }
+    ytmusic-app[is-bauhaus-sidenav-enabled] #guide-wrapper.ytmusic-app {
+	position: fixed;
+	height: 100%;
+	left: 0;
+	top: 0;
+	/* background: var(--ytmusic-background); */
+	width: var(--ytmusic-guide-width);
+	border-right: 1px solid rgba(255,255,255,.15);
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	}
+   body, html, ytd-app, ytd-mini-guide-renderer {
+	--ytmusic-color-black4: rgba(0,0,0,0);
+	--ytmusic-background: transparent !important;
+	}
+}
+
+
+@-moz-document domain(youtube.com) {
+    #background, #chips-wrapper, ytd-mini-guide-entry-renderer {
+        background-color: rgba(0,0,0,.3) !important;
+        backdrop-filter: blur(20px);
+    }    
+    body, html, ytd-app, ytd-mini-guide-renderer {
+        background-color: transparent !important;
+    }
+}
+
+
+
+@-moz-document domain("github.com") {
+
+:root   {
+
+--bgColor-default: rgba(0,0,0,.3) !important;
+
+--bgColor-inset: transparent !important;
+
+--bgColor-muted: rgba(160, 160, 171, 0.3) !important;
+
+--borderColor-default: rgba(160, 160, 171, 0.3) !important;
+
+--borderColor-muted: rgba(160, 160, 171, 0.3) !important;
+
+	}
+
+.color-bg-subtle {
+
+background-color: transparent !important;
+
+}
+
+.input-contrast {
+
+background-color: transparent !important;
+
+}
+
+}
+
+
+
+@-moz-document domain(new.reddit.com) {
+
+:root.theme-dark .sidebar-grid, :root.theme-dark .grid-container.grid, :root.theme-dark .sidebar-grid .theme-beta:not(.stickied):not(#left-sidebar-container):not(.left-sidebar-container), :root.theme-dark .sidebar-grid .theme-rpl:not(.stickied):not(#left-sidebar-container):not(.left-sidebar-container), :root.theme-dark .grid-container.grid .theme-beta:not(.stickied):not(#left-sidebar-container):not(.left-sidebar-container), :root.theme-dark .grid-container.grid .theme-rpl:not(.stickied):not(#left-sidebar-container):not(.left-sidebar-container) {
+	--color-neutral-content: rgba(0,0,0,0.3) !important;
+	}
+    header {
+        background-color: rgba(0,0,0,0.3) !important;
+        backdrop-filter: blur(20px);
+    }    
+    body, html, reddit-sidebar-nav, shreddit-post, aside, .reddit-search-bar{
+        background-color: rgba(0,0,0,0.3) !important;
+        
+    }
+    
+    
+}
+
+@-moz-document domain(google.com) {
+    .sfbg {
+        background-color: rgba(0,0,0,.3) !important;
+        backdrop-filter: blur(20px);        
+    }
+    body, html, div#search > * {
+        background-color: transparent !important;
+    }
+    .g, .appbar {
+        background-color: transparent !important;
+    }
+    
+    
+    div#rso {
+        * {
+            background-color: transparent !important;
+        }
+    }
+    div#cnt > div {
+
+    }
+    div#tav { 
+    	:root{
+	--darkreader-text--COEmY: #e4e1db;
+	--darkreader-bg--xhUGwc: #181a1b00;
+	--darkreader-border--xhUGwc: #897f70;
+}} 
+}
+
+
+@-moz-document domain(fetlife.com) {
+    
+    body, html, div#search > * {
+        background-color: transparent !important;
+        
+    }
+    
+    .bg-black {
+	--darkreader-bg--tw-bg-opacity: 1;
+	background-color: rgba(0, 0, 0, 0.3) !important;
+    }
+    .bg-gray-900 {
+	--darkreader-bg--tw-bg-opacity: 1;
+	background-color: rgba(0, 0, 0, 0.3) !important;
+    }
+    .bg-gray-950 {
+	--darkreader-bg--tw-bg-opacity: 1;
+	background-color: rgba(0, 0, 0, 0) !important;
+    }
+    [data-story-style="bordered"] + [data-story-style="bordered"], [data-story-style="ad"] + [data-story-style="bordered"], [data-story-style="bordered"] + [data-story-style="ad"] {
+	--darkreader-bg--tw-bg-opacity: 1;
+	background-color: rgba(0, 0, 0, 0) !important;
+    }
+    input::placeholder, textarea::placeholder {
+	--darkreader-text--tw-text-opacity: 1;
+	color: rgb(255, 255, 255) !important;
+    }
+}
+
+
+
+
+@-moz-document url-prefix("about:newtab"),
+url-prefix("about:home") {
+    /*Hides the Releases and Support Links*/
+    #floorp {
+        display: none;
+    }
+    element {
+	--newtab-background-color: rgba(0, 0, 0, 0.3);
+	--newtab-text-primary-color: rgba(244, 242, 238, 1);
+	--lwt-sidebar-background-color: rgb(56, 60, 62);
+	--lwt-sidebar-text-color: rgba(244, 242, 238, 1);
+}
+    /*Hides the cog button to customize the new tab*/
+    [data-l10n-id="newtab-personalize-icon-label"] {
+        display: none !important;
+    }
+    /*Removes the Floorp Logo*/
+    .logo-and-wordmark {
+        display: none !important;
+    }
+    main {
+        display: none;
+    }
+    #background {
+        background-color: transparent !important;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    element {
+    --newtab-background-color: rgba(0, 0, 0, 0.3);
+    }
+}
+
+@-moz-document url-prefix(about:newtab) {*{ background-color:transparent; }}
+
+
